@@ -1,0 +1,21 @@
+git init                   (Create git repository with master branch)
+git init -b main           (First branch name is "main" now)
+git status                 (See status of working directory)
+git add <filename or .>    (Add file to staging area)
+git commit -m <message>    (Commit changes to local repo)
+git commit -a -m <message> (Add and commit)
+git diff                   (Check changes)
+git diff --staged          (Check changes for staged changes)
+git log                    (See committed history)
+git log --pretty=oneline   (Pretty print logs)
+git rm --cached <filename> (Remove file from staging area but not from working directory)
+git clone <address>        (Clone repo from remote)
+git push origin main       (Push to main branch)
+git remote -v              (Check fetch and push server locations)
+git tag                    (Check current tags)
+git tag <name> -m <msg>    (Create a local tag)
+git push origin <name>     (Push a tag or branch)
+
+
+Other commands:
+ssh-keygen -t ed25519 -C "<email>" (Generate ssh keypair)
