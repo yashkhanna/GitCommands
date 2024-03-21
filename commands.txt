@@ -1,10 +1,52 @@
-git init                   (Create git repository with master branch)
-git init -b main           (First branch name is "main" now)
+1) Basic/Misc commands:
+git init                   (Create git repository with master/main branch)
+git init -b <name>         (First branch name is "main" now)
 git status                 (See status of working directory)
-git add <filename or .>    (Add file to staging area)
+git add <name or .>        (Add file(s) to staging area)
 git commit -m <message>    (Commit changes to local repo)
 git commit -a -m <message> (Add and commit)
 git diff                   (Check changes)
 git diff --staged          (Check changes for staged changes)
-git log                    (See committed history)
 git rm --cached <filename> (Remove file from staging area but not from working directory)
+git clone <address>        (Clone repo from remote)
+git remote -v              (Check fetch and push remote locations)
+
+2) Viewing git tree (commit history)
+git log                    (See committed history)
+git log --pretty=oneline   (Pretty print logs)
+git log --graph            
+git log --all --graph
+
+3) Working with tags:
+git tag                    (Show current tags)
+git tag <name> -m <msg>    (Create a local tag with message)
+git push origin <name>     (Push a tag to remote)
+
+4) Merging branches
+git merge <name>           (Merge branch "name" into current branch)
+git merge --squash <name>
+
+5) Branch switching/creation:
+git switch <name>          (Switch to branch "name")
+git switch -c <name>       (Create and switch to "name" branch)
+git switch -               (Switch to previous branch)
+git checkout -b <name>     (Create and switch to "name" branch)
+git checkout <name>        (Create a new branch)
+
+6) Branch Deletion:
+git branch -d <name>       (Delete a local branch)
+git branch -D <name>       (Delete a local branch without checking its merged status)
+
+7) Branch Pull/Fetch:
+git pull                   (Updates the local repo and the working directory)
+git fetch                  (Updates your local repo without updating the working directory)
+
+8) Add remote link for a project
+git remote add origin <link to github repo> (Set upstream for new project)
+
+9) Branch Push:
+git push origin main       (Push to main branch)
+git push -u origin <name>  (Push a tag or branch and set-upstream)
+
+10) Other commands:
+ssh-keygen -t ed25519 -C "<email>" (Generate ssh keypair in ~/.ssh/ folder)
